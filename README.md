@@ -1,7 +1,7 @@
-##Udacity Project Notes
+## Udacity Project Notes
 I named the project Foci - Focused Learning. 
 
-##Device specific issues
+## Device specific issues
 On some Samsung devices (e.g. Note3) the KeyboardAvoidingView does not lift the content high enough to reveal all the controls. Smasung Keybard has an extra line on top showing the predictions based on the character entered.
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
