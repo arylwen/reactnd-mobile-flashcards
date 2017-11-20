@@ -117,7 +117,9 @@ class QuizMe extends React.Component {
                         title='Nope'
                         backgroundColor={palette.accentColor.backgroundColor}
                         onPress={()=>{
-                            currentCard:currentCard+1
+                            this.setState({
+                                currentCard:currentCard+1
+                            })
                         }}
                     />
                 </Card>
@@ -125,7 +127,7 @@ class QuizMe extends React.Component {
         } else {
             return(
                 <Card
-                    title={`You got ${goodAnswers} out of ${cards.length}`}
+                    title={`You answered corectly ${goodAnswers} questions out of ${cards.length}`}
                 >
                     <Button
                         buttonStyle={styles.buttonStyle}
@@ -165,7 +167,7 @@ const styles = {
         marginRight: 0,
         marginBottom: 0,
     },
-    cardsRemaining: {
+    cardsLeft: {
         textAlign: 'center',
         marginBottom: 10,
     },
